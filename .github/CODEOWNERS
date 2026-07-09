@@ -1,0 +1,9 @@
+# Default owner for everything in the repo. Graphite (and GitHub) use this file
+# to request reviews automatically — a small demo of ownership-driven review
+# assignment.
+* @montali
+
+# Package-scoped ownership example (the same person here, but this is where a
+# real team would split the calculator surfaces across reviewers).
+/src/calcstack/engine/ @montali
+/src/calcstack/api/    @montali

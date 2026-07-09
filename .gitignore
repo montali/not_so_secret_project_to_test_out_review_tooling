@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtualenvs / uv
+.venv/
+
+# Tooling caches
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+*.xml
+
+# Pants
+/.pants.d/
+/.pids
+/.pants.workdir.lock
+
+# calcstack runtime data (default history location is ~/.calcstack, but ignore
+# any that lands in-tree during local experimentation)
+.calcstack/

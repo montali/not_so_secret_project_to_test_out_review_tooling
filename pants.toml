@@ -1,0 +1,22 @@
+[GLOBAL]
+pants_version = "2.32.1"
+backend_packages = [
+    "pants.backend.python",
+    "pants.backend.experimental.python.lint.ruff.check",
+    "pants.backend.experimental.python.lint.ruff.format",
+    "pants.backend.python.typecheck.mypy",
+]
+
+[python]
+interpreter_constraints = ["==3.13.*"]
+
+[python-bootstrap]
+# uv-managed CPython 3.13 is not on PATH (system Python is 3.14), so tell Pants
+# where to find a matching interpreter in addition to the usual locations.
+search_path = ["<PATH>", "/Users/mnt/.local/share/uv/python/cpython-3.13-macos-aarch64-none/bin"]
+
+[source]
+root_patterns = ["src", "/"]
+
+[test]
+output = "all"
